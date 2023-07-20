@@ -1,11 +1,22 @@
 import React from "react";
+import FirstPage from "./components/FirstPage";
+import MainPage from "./components/MainPage";
+
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <h1>Teknolojik Yemekler</h1>
-      <p>Burdaki kodu silip kendi headerınızı ekleyebilirsiniz</p>
-    </>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <FirstPage />
+          </Route>
+        
+        <Route exact path="/mainpage">
+          <MainPage />
+        </Route>
+          </Switch>
+    </BrowserRouter>
   );
 };
 export default App;
