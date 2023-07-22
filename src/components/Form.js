@@ -108,9 +108,7 @@ export default function Form() {
     const [buttonDisabledMi, setButtonDisabledMi] = useState(true);
     const history = useHistory();
 
-    // const [newOrder, setNewOrder] = useState(null);
-
-    // form değiştirkçe useEffect aktifleşir ve formShema'ya göre formun validasyonunu kontrol eder.FormShemaya uyuyorsa tamamı, gönderme butonunu aktifleştirir.
+   
     useEffect(() => {
         formSchema.isValid(form).then((valid) => setButtonDisabledMi(!valid));
     }, [form]);
@@ -141,17 +139,7 @@ export default function Form() {
             [name]: value,
         });
     }
-    //hataları her değişiklik yapıldığında check ediyor.(onChange içine koyarak)
-
-    // const [toplam, setToplam] = useState(85.5);
-    // const [sumArr, setSumArr] = useState([]);
-    // function calculate() {
-    //   if (Object.values(form) === "false") {
-    //     setSumArr(Object.keys(form));
-    //   }
-    //   setToplam(toplam + sumArr.length);
-    //   return toplam;
-    // }
+    
 
     const totalPrice =
         (85.5 +
