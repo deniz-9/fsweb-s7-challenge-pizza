@@ -19,7 +19,7 @@ export default function Success() {
                 src="https://seeklogo.com/images/P/pizza-logo-42816D88BE-seeklogo.com.png"
                 style={{ width: "100px" }}
               />
-              PİZZA DÜNYASI
+            Teknolojik Yemekler 
             </h1>
           </div>
           <p className="congrats">TEBRİKLER ! SİPARİŞİNİZ YOLA ÇIKTI :)</p>

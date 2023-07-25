@@ -2,34 +2,34 @@ import React from "react";
 import "./FirstPage.css";
 import { useHistory } from "react-router-dom";
 
-export default function FirstPage() { 
-    const history = useHistory();
-    const toMainPage = () => {
-      history.push("/mainpage");
-}
+export default function FirstPage() {
+  const history = useHistory();
+  const toMainPage = () => {
+    history.push("/mainpage");
+  }
 
 
-return (
+  return (
     <div className="firstPageContainer">
-    <div className="heading">
-      <h1 className="mainHeadingFirst">
-        <img
-          alt="logo"
-          src="https://seeklogo.com/images/P/pizza-logo-42816D88BE-seeklogo.com.png"
-          style={{ width: "100px" }}
-        />
-        PİZZA DÜNYASI
-      </h1>
-      <h5 className="happy">BİR DİLİM LEZZET BİNLERCE MUTLULUK :)</h5>
-      <button className="firstButton" onClick={toMainPage}>
-        MUTLU OL!
-      </button>
+      <div className="heading">
+        <h1 className="mainHeadingFirst">
+          <img
+            alt="logo"
+            src="https://seeklogo.com/images/C/cici-s-pizza-logo-9BC7601F3D-seeklogo.com.png"
+            style={{ width: "100px" }}
+          />
+          Teknolojik Yemekler
+        </h1>
+        <h5 className="happy">Acıktın Mı ?</h5>
+        <button className="firstButton" onClick={toMainPage}>
+          Acıktım !!
+        </button>
+      </div>
+      <img
+        alt="pizzaphoto"
+        className="firstPhoto"
+        src="https://www.eauclairesbestpizza.com/wp-cdontent/uploads/2022/06/pizza-6-speciality-1-1fx9ae.png"
+      />
     </div>
-    <img
-      alt="pizzaphoto"
-      className="firstPhoto"
-      src="https://www.eauclairesbestpizza.com/wp-content/uploads/2022/06/pizza-6-speciality-1-1fx9ae.png"
-    />
-  </div>
-);
+  );
 }

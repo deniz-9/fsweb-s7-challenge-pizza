@@ -130,10 +130,7 @@
   .logo {
     width: 40px;
   }
-  .logoPart {
-    display: flex;
-    padding-top: 12rem;
-  }
+  
   
   .secondButton {
     background-color: rgb(206, 40, 41);

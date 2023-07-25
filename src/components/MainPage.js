@@ -63,10 +63,10 @@ export default function MainPage() {
           {" "}
           <img
             alt="logo"
-            src="https://seeklogo.com/images/P/pizza-logo-42816D88BE-seeklogo.com.png"
+            src="https://seeklogo.com/images/C/cici-s-pizza-logo-9BC7601F3D-seeklogo.com.png"
             style={{ width: "100px" }}
           />
-          PİZZA DÜNYASI
+        Teknolojik Yemekler 
         </h1>
 
         <button className="secondButton" onClick={toOrderPage}>
@@ -75,14 +75,14 @@ export default function MainPage() {
       </div>
       <div className="pizzaPart">
         <img
-          src="https://i.pinimg.com/originals/a3/e0/6c/a3e06c8f7b389ecacdbcd59f2b29fc17.jpg"
+          src="https://t4.ftcdn.net/jpg/02/80/76/25/360_F_280762521_j1sQEgHTmtfoUcAEgoPt1gdBu6yinZQN.jpg"
           alt="pizza"
           className="pizzaImg"
         />
 
         <div className="textPart">
           <h1 onClick={toOrderPage}>
-            Bir Dilim Pizzadan Başka, İki Dilim Pizza Mutlu Eder...
+           Kim Pizza Sevmez Ki ?
           </h1>
         </div>
       </div>
@@ -95,13 +95,13 @@ export default function MainPage() {
         </div>
       </div>
       <div className="footerPart">
-        <a href="https://www.google.com/maps">
+        {/* <a href="https://www.google.com/maps">
           <img
             alt="map"
             className="map"
             src="https://julian.digital/wp-content/uploads/2017/12/istanbul_moves.jpg"
           />
-        </a>
+        </a> */}
         <Footer />
       </div>
     </div>

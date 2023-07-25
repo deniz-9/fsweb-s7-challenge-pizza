@@ -22,10 +22,10 @@ export default function Order() {
             {" "}
             <img
               alt="logo"
-              src="https://seeklogo.com/images/P/pizza-logo-42816D88BE-seeklogo.com.png"
+              src="https://seeklogo.com/images/C/cici-s-pizza-logo-9BC7601F3D-seeklogo.com.png"
               style={{ width: "100px" }}
             />
-            PİZZA DÜNYASI
+           Teknolojik Yemekler 
           </h1>
         </div>
   
@@ -38,13 +38,7 @@ export default function Order() {
         </div>
   
         <div className="footerPart2">
-          <a href="https://www.google.com/maps">
-            <img
-              alt="map"
-              className="map"
-              src="https://julian.digital/wp-content/uploads/2017/12/istanbul_moves.jpg"
-            />
-          </a>
+          
           <Footer />
         </div>
       </div>

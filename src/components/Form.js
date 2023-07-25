@@ -497,40 +497,41 @@ export default function Form() {
                             </h3>
 
                             <label>
-                                İsim Soyisim:
+                               Adınız Soyadınız :
                                 <br />
                                 <input
-                                    type="text"
+                                    type="
+                                    "
                                     name="namesurname"
                                     value={form.namesurname}
                                     onChange={handleChange}
-                                    placeholder="İsim Soyisim"
+                                    placeholder="Adınız Soyadınız"
                                 />
                             </label>
                             {error.namesurname && <p>{error.namesurname}</p>}
 
                             <label>
-                                Adres:
+                                Adresiniz :
                                 <br />
                                 <input
                                     type="text"
                                     name="address"
                                     value={form.address}
                                     onChange={handleChange}
-                                    placeholder="Adres"
+                                    placeholder="Adresiniz"
                                 />
                             </label>
                             {error.address && <p>{error.address}</p>}
 
                             <label>
-                                Email:
+                                Email Adresiniz :
                                 <br />
                                 <input
                                     type="email"
                                     name="email"
                                     value={form.email}
                                     onChange={handleChange}
-                                    placeholder="Email"
+                                    placeholder="Email Adresiniz"
                                 />
                             </label>
                             {error.email && <p>{error.email}</p>}
