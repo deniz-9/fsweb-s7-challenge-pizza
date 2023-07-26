@@ -1,6 +1,5 @@
 import React from "react";
 import "./Order.css";
-import Mobile from "./Mobile";
 import Form from "./Form";
 import Footer from "./Footer";
 import { useHistory } from "react-router-dom";
@@ -29,9 +28,6 @@ export default function Order() {
           </h1>
         </div>
   
-        <div className="mobileAppPart">
-          <Mobile />
-        </div>
   
         <div className="orderPart">
           <Form />

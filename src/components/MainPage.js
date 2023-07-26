@@ -66,7 +66,7 @@ export default function MainPage() {
             src="https://seeklogo.com/images/C/cici-s-pizza-logo-9BC7601F3D-seeklogo.com.png"
             style={{ width: "100px" }}
           />
-        Teknolojik Yemekler 
+          Teknolojik Yemekler
         </h1>
 
         <button className="secondButton" onClick={toOrderPage}>
@@ -82,7 +82,7 @@ export default function MainPage() {
 
         <div className="textPart">
           <h1 onClick={toOrderPage}>
-           Kim Pizza Sevmez Ki ?
+            Kim Pizza Sevmez Ki ?
           </h1>
         </div>
       </div>
@@ -95,13 +95,7 @@ export default function MainPage() {
         </div>
       </div>
       <div className="footerPart">
-        {/* <a href="https://www.google.com/maps">
-          <img
-            alt="map"
-            className="map"
-            src="https://julian.digital/wp-content/uploads/2017/12/istanbul_moves.jpg"
-          />
-        </a> */}
+
         <Footer />
       </div>
     </div>

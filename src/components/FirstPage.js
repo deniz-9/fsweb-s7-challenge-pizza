@@ -28,7 +28,7 @@ export default function FirstPage() {
       <img
         alt="pizzaphoto"
         className="firstPhoto"
-        src="https://www.eauclairesbestpizza.com/wp-cdontent/uploads/2022/06/pizza-6-speciality-1-1fx9ae.png"
+        src="https://www.eauclairesbestpizza.com/wp-content/uploads/2022/06/pizza-6-speciality-1-1fx9ae.png"
       />
     </div>
   );

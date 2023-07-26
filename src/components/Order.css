@@ -1,24 +1,4 @@
-.mobilePart {
-    display: flex;
-    justify-content: center;
-    background-color: #850303;
-  }
-  .mobile {
-    max-width: 70%;
-    margin: 0;
-    padding: 0;
-  }
-  .mobileText {
-    color: #faf7f2;
-    font-family: "Russo One", sans-serif;
-    letter-spacing: 5px;
-    word-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.1rem;
-  }
+
   h5 {
     color: #faf7f2;
     font-family: "Russo One", sans-serif;
@@ -244,7 +224,7 @@
   }
   .congrats {
     color: #faf7f2;
-    font-family: "Gloria Hallelujah", cursive;
+    font-family: "Barlow", cursive;
   }
   .parag {
     font-family: "Barlow", sans-serif;
