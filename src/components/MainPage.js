@@ -49,14 +49,14 @@ export default function MainPage() {
   const toOrderPage = () => {
     history.push("/order-pizza");
   };
-  const toMainPage = () => {
-    history.push("/mainpage");
+  const toFirstPage = () => {
+    history.push("/");
   };
   return (
     <div className="MainPageContainer">
       <div className="menuPart">
-        <button className="secondButton" onClick={toMainPage}>
-          ANASAYFA
+        <button className="secondButton" onClick={toFirstPage}>
+          GİRİŞ
         </button>
 
         <h1 className="mainHeading">

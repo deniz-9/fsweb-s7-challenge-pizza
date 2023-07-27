@@ -1,49 +1,56 @@
-describe('Pizza Siparişi', () => {
-    it('Anasayfa yüklendi.', () => {
-        // Ana sayfayı aç
-        cy.visit('http://localhost:3000/');
+// Giriş sayfasında butonu bul
+
+describe("Giriş Sayfası", () => {
+    it("Acıktım Butonu Sayfada Görünüyor Mu?", () => {
+      cy.visit("http://localhost:3000/");
+      cy.contains("Acıktım").should("exist");
     });
+  });
 
+  
 
-    it('Acıktım Butonu', () => {
-        // Butonu Bul
-        cy.visit('http://localhost:3000/');
-        cy.visit('http://localhost:3000/pizza');
+describe("Siparişi Gönder", () => {
+    it("Sipariş Butonu Sayfada Görünüyor Mu?", () => {
+      cy.visit("http://localhost:3000/order-pizza");
+      cy.contains("SİPARİŞİ GÖNDER").should("be.visible");
     });
+  });
+  
+  // Form elemanlarını seç ve değerlerini gir
 
-    it('Form Elemanları', () => {
-        cy.visit('http://localhost:3000/pizza');
-        
-
-
-    })
-
-    it('Sipariş Sayfası', () => {
-        // Sipariş Sayfası
-
-        cy.visit('http://localhost:3000/pizza');
-        cy.visit('http://localhost:3000/success');
-
+  describe("Form Testi", () => {
+    it("Form  Gönderiliyor Mu?", () => {
+      cy.visit("http://localhost:3000/order-pizza");
+  
+      cy.get('select[name="pizzatype"]').select("Margarita"); // pizzayı seç
+      cy.get('[type="radio"]').check();
+  
+      cy.get('[type="checkbox"]').check(); // hamur tipini gir
+  
+      cy.get('input[name="namesurname"]').type("Deniz Demir"); // isim gir
+  
+      cy.get('input[name="address"]').type("xxxxxxxxxxxxxxxxxxxxx"); 
+      cy.get('input[name="email"]').type("xxx@email.com");
+      cy.get('input[name="quantity"]'); // kaç adet pizza siparişi verileceğini gir
+  
+      cy.get('input[name="ordernote"]').type("Lütfen acı sos eklemeyin."); // not gir
+  
+      cy.get('button[type="submit"]').click(); // sipariş ver butonuna tıkla
     });
+  });
+
+  describe("Success Sayfası ", () => {
+    it("Anasayfaya Dön Butonu Sayfada Görünüyor Mu?", () => {  // success sayfası buton kontrolü
+      cy.visit("http://localhost:3000/success");
+      cy.contains("ANASAYFAYA DÖN").should("exist");
+    });
+  });
 
 
-    //   // Form elemanlarını seç ve değerlerini gir
-
-    //  // cy.get('[data-cy="hamur"]').select('İnce'); 
-    //     cy.get('[data-cy="ektramalzemeler"]').check(['Pepperoni', 'Mantar'])
-
-    //   // Hamur tipini seç
-    //   cy.get('[data-cy="pizza-boyutu"]').select('orta'); // Pizza boyutunu seç
-    //  ; // Ek malzemeleri seç
-    //   cy.get('[data-cy="adet"]').type('2'); // Kaç adet pizza siparişi verileceğini gir
-
-    //   // Sipariş notunu gir
-    //   cy.get('[data-cy="siparis-notu"]').type('Lütfen acı sos eklemeyin.');
-
-    //   // Sipariş ver butonuna tıkla
-    //   cy.get('[data-cy="siparis-ver"]').click();
-
-    //   // Siparişin başarıyla alındığına dair teyit mesajını kontrol et
-    //   cy.get('[data-cy="teyit-mesaji"]').should('contain', 'Siparişiniz alınmıştır. Teşekkür ederiz!');
-
-});
+  describe("Anasayfaya Dön Testi ", () => {  // anasayfaya  dönüş kontrolü
+    it("Anasayfaya  Dönülüyor mu ?", () => {
+      cy.visit("http://localhost:3000/success");
+      cy.get('.secondButton').click();
+      
+    });
+  });
